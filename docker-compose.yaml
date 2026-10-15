@@ -1,0 +1,15 @@
+services:
+  engramvault-web:
+    build: .
+    image: engramvault-web:latest
+    container_name: engramvault-web
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+      - ./public:/app/public:ro
+    networks:
+      - services_net
+
+networks:
+  services_net:
+    external: true

@@ -1,0 +1,42 @@
+# EngramVault
+
+> A private, verifiable personal memory for AI conversations, notes, documents, and decisions.
+
+EngramVault helps people recover what they discussed, chose, and learned over time. It preserves original sources and distinguishes evidence, claims, facts, and decisions rather than treating every imported sentence as permanent truth.
+
+## Core idea
+
+Capture everything automatically, curate what matters, and keep the source. The product is useful directly to a person and can also be queried by authorised AI agents through MCP and APIs.
+
+## What it solves
+
+- AI conversations, notes, manuals, and project documents are usually scattered.
+- Search alone does not reliably answer what a person chose, why, and whether later evidence changed the decision.
+- Manual note-taking loses context because users must decide what is worth saving while they are learning or working.
+
+## Key capabilities
+
+- Immutable archive of AI conversations and transcripts.
+- Hybrid lexical and semantic search.
+- Source-aware knowledge layer with FACT, CLAIM, DECISION, and temporal state.
+- Evidence-first ingestion for Markdown, documents, and future Notion sync.
+- MCP and REST APIs for authorised AI tools.
+- Self-hosted and privacy-oriented deployment.
+
+## Epistemic model
+
+- Evidence: a source with provenance, not automatically true.
+- Claim: an attributed or unverified statement.
+- Fact: a confirmed current state.
+- Decision: a choice that may be evaluating, adopted, abandoned, or superseded.
+
+When sources conflict, EngramVault should present the conflict and its provenance rather than silently selecting a winner.
+
+## Links
+
+- Human-readable overview: /index.html
+- Markdown overview (English): /engramvault.md
+- Markdown overview (Italian): /engramvault.it.md
+- GitHub Repository: https://github.com/gaskb/engramvault
+- Docker Hub: https://hub.docker.com/r/gaskb/engramvault
+- Contact: mailto:info@engramvault.net
