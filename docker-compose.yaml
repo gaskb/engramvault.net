@@ -4,9 +4,11 @@ services:
     image: engramvault-web:latest
     container_name: engramvault-web
     restart: unless-stopped
+    command: ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8080"]
     volumes:
       - ./data:/data
-      - ./public:/app/public:ro
+      - .:/app/public:ro
+      - ./server.py:/app/server.py:ro
     networks:
       - services_net
 
